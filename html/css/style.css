@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}body{
+    background-color: #000;
+}
+.movieCard{
+    height: 500px;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+.movieCard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.movieCard figcaption{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #343a40;
+}
+.movieCard .overview{
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    widows: 100%;
+    bottom: -800%;
+    color: #000;
+    transition:all,1s ease-in-out;
+    padding: 20px;
+    overflow:auto;
+}
+.movieCard:hover .overview{
+    bottom:0;
+}
+.card{
+    margin-bottom: 20px;
+}
